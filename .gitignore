@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-portable/
+out/
+release/
+
+# Local app/cache data
+.cache/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local screenshots and generated media
+Screenshot *.png
+*.tmp
+*.temp
+*.webm
+*.mkv
+*.mp4
+*.mov
+
+# Electron builder
+*.blockmap
+builder-debug.yml
+builder-effective-config.yaml
