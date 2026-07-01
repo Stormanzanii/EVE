@@ -11,6 +11,7 @@
 
 ## Project Notes
 
-- This is an Electron app.
+- The current shipped app is Electron, but the native migration target is `native/`, built with C#/.NET and Avalonia UI.
 - Prefer existing project patterns over introducing new frameworks or large abstractions.
 - Rebuild the portable app with `pnpm run dist:portable` when source changes need to be reflected in `dist-portable/EVE-Portable.exe`.
+- Validate native changes with `dotnet build native\EVE.Native.sln` when the .NET SDK is available.
