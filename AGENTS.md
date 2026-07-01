@@ -14,4 +14,4 @@
 - The current shipped app is Electron, but the native migration target is `native/`, built with C#/.NET and Avalonia UI.
 - Prefer existing project patterns over introducing new frameworks or large abstractions.
 - Rebuild the portable app with `pnpm run dist:portable` when source changes need to be reflected in `dist-portable/EVE-Portable.exe`.
-- Validate native changes with `dotnet build native\EVE.Native.sln` when the .NET SDK is available.
+- For native changes, run `dotnet build native\EVE.Native.sln` only. Do not run tests by default; if the build fails, focus on the reported build errors first.
